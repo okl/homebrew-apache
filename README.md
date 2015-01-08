@@ -1,4 +1,18 @@
 # Homebrew Apache
+
+# Q: WHY IS THIS FORKED HERE?
+A: Because the maintainer of this project rearranges the damn filepaths of apache (configs, etc) every few months making it a moving target to write scripts to set up and handle dev environments.
+
+# Q: How should an OKL user install apache 2.2?
+A: Like this:
+```
+brew install https://raw.githubusercontent.com/okl/homebrew-apache/master/httpd22.rb
+```
+# Q: Should I mess with this formula?
+A: Only if you really must in order for this to install on "Mac OS X 10.19 Muir Woods" or something. See if you can merge in changes from the upstream we forked from! Perhaps you will be able to avoid bringing in the random file moves he has done this time :)
+----
+# Original format of readme follows
+
 ## How do I install these formulae?
 `brew install homebrew/apache/<formula>`
 
@@ -7,7 +21,7 @@ Or `brew tap homebrew/apache` and then `brew install <formula>`.
 Or install via URL (which will not receive updates):
 
 ```
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-apache/master/<formula>.rb
+brew install https://raw.githubusercontent.com/okl/homebrew-apache/master/<formula>.rb
 ```
 
 ## Documentation
